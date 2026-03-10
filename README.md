@@ -173,11 +173,15 @@ SystemVerilog assertions verify protocol correctness including:
 # Repository Structure
 
 ```
+
+agent/      - UVM agent, driver, monitor, sequence item, sequencer classes
+env/        - UVM scoreboard, subscriber, environment classes
+interface/  - UVM interface class - includes assertions
 rtl/        - APB slave RTL
-tb/         - UVM testbench
-sequences/  - stimulus sequences
-assertions/ - protocol assertions
-coverage/   - functional coverage
+sequence/   - stimulus sequences
+sim/        - makefile, testlist
+test/       - protocol test cases
+top/        - tb top module, package class
 README.md   - project documentation
 ```
 
